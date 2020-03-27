@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.controls {
+  position: fixed;
+  top: 2vw;
+  left: 2vw;
+  z-index: 1;
+}
+
+.controls button {
+  display: block;
+  font-size: 1em;
+  padding: 1em;
+  margin: 1em;
+  background-color: beige;
+  color: black;
+}
+
+.subtract:disabled {
+  opacity: 0.2;
+}
+
+.mover {
+  height: 5vw;
+  position: absolute;
+}

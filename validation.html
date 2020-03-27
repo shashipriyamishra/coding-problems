@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="validation.js" defer></script>
+</head>
+
+<body>
+  <template id="my-input">
+    <style>
+      #input:invalid {
+        border: solid #F00 2px;
+      }
+    </style>
+    <h1>
+      <slot name="label">Label default text</slot>
+    </h1>
+    <div><input type="text" id="input" /></div>
+    <div>
+      <label>
+        <input type="radio" name="validation-type" value="number" checked /> Numbers
+      </label>
+      <label>
+        <input type="radio" name="validation-type" value="letter" /> Letters
+      </label>
+      <label>
+        <input type="radio" name="validation-type" value="password" /> Password
+      </label>
+    </div>
+  </template>
+
+  <my-input>
+    <span slot="label">Validation:</span>
+  </my-input>
+  <my-input>
+    <span slot="label">Validation:</span>
+  </my-input>
+</body>
+
+</html>

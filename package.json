@@ -1,0 +1,17 @@
+{
+  "name": "optimisation-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^16.1.0",
+    "mocha": "^7.0.1",
+    "static-server": "^2.2.1"
+  },
+  "scripts": {
+    "serve": "static-server",
+    "test": "mocha"
+  }
+}
